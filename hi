@@ -3,5 +3,11 @@
 int main() {
 
   printf("hello");
-
+  int a = 0;
+  scanf_s("%d", &a);
+  for(int k = 0; k < a; k++)
+  {
+      printf("HJH worked in here");
+  }
+  return 0;
 }
