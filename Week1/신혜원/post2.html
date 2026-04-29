@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 박스모델이 아직 헷갈립니다</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <header class="topbar">
+        <h1 class="logo">Board Study</h1>
+    </header>
+
+    <main class="container detail-container">
+        <div class="post-item">
+            <section>
+                <div class="category">질문</div>
+                <h2 class="post-title">CSS 박스모델이 아직 헷갈립니다</h2>
+            </section>
+
+            <div class="post-info">
+                <span>작성자: 김학생</span>
+                <span>작성일: 2026.03.17</span>
+                <span>조회수 34</span>
+            </div>
+
+            <div class="post-content">
+                <p>안녕하세요. CSS를 공부하다가 박스모델 개념이 아직 헷갈려서 질문 남깁니다.</p>
+                <p>margin, padding, border가 각각 어디에 적용되는지 그림으로 보면 알 것 같은데 실제 코드로 보면 자꾸 헷갈립니다.</p>
+                <p>특히 요소 간 간격을 줄 때 margin을 써야 하는지, 내부 여백을 줄 때 padding을 써야 하는지 명확하게 구분하는 방법이 궁금합니다.</p>
+                <p>쉽게 이해할 수 있는 설명이나 예시가 있다면 알려주시면 감사하겠습니다.</p>
+            </div>
+
+            <a href="./index.html" class="btn">목록으로</a>
+        </div>
+
+        <section class="comment-section">
+            <h2 class="comment-title">댓글 2개</h2>
+
+            <article class="comment-item">
+                <div class="comment-meta">
+                    <span class="comment-author">관리자</span>
+                    <span class="comment-date">2026.03.17 15:10</span>
+                </div>
+                <p class="comment-text">content, padding, border, margin 순서로 생각하면 이해하기 조금 더 쉬워요.</p>
+            </article>
+
+            <article class="comment-item">
+                <div class="comment-meta">
+                    <span class="comment-author">박스터디</span>
+                    <span class="comment-date">2026.03.17 15:32</span>
+                </div>
+                <p class="comment-text">박스 하나 그려놓고 안쪽은 padding, 바깥쪽은 margin이라고 보면 헷갈림이 줄어들어요.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Board Study</p>
+    </footer>
+</body>
+</html>
