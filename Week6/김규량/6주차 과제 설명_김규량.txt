@@ -1,0 +1,12 @@
+기능 추가 후 설명
+## AI로 만든 코드 동작 방식
+
+- page.jsx에서 `useState`로 `input`과 `todos` 상태를 관리합니다.
+- `handleAddTodo()`는 새로운 todo 객체를 `id`, `text`, `completed: false`와 함께 추가합니다.
+- `completedCount`는 `todos.filter(t => t.completed).length`로 계산하고, 하단에 `X / Y개 완료` 형태로 표시합니다.
+- 각 todo 항목의 완료 토글은 `setTodos(todos.map(...))`를 통해 해당 항목의 `completed` 값을 반전시키고, 삭제는 `todos.filter(...)`로 처리합니다.
+
+## 컴포넌트 분리 방식
+
+- `TodoItem`을 TodoItem.jsx로 분리했습니다.
+- 부모 page.jsx는 `todo`, `onDelete`, `onToggle`을 `props`로 전달하고, `TodoItem`은 체크박스와 취소선 처리, 삭제 버튼 렌더링만 담당합니다.
